@@ -15,7 +15,9 @@ sourceCompatibility = 1.8
 repositories {
     mavenCentral()
 }
-
+jacoco {
+    toolVersion = "0.8.6"
+}
 
 publishing {
     repositories {
