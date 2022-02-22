@@ -4,7 +4,10 @@ pipeline {
     stage('build') {
       steps {
         echo 'hi'
-        sh 'gradlew.bat build'
+        sh 'gradle wrapper'
+        sh '''
+
+gradlew.bat build'''
       }
     }
 
