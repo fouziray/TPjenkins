@@ -7,7 +7,7 @@ pipeline {
         sh 'gradle wrapper'
         sh '''
 
-gradlew build'''
+gradlew.bat build'''
       }
     }
 
