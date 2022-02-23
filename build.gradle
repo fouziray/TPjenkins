@@ -12,6 +12,11 @@ version '1.0'
 
 sourceCompatibility = 1.8
 
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+    jacoco.excludes = ['jdk.internal.*']
+}
+
 repositories {
     mavenCentral()
 }
