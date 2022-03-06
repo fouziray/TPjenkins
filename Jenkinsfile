@@ -5,6 +5,8 @@ pipeline {
       steps {
         echo 'hi'
         sh 'java --version'
+        sh 'gradle --version'
+        sh 'gradle build'
       }
     }
 
